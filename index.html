@@ -82,21 +82,20 @@
       height: 20px;
       background: rgba(255, 255, 255, 0.7);
       border-radius: 50%;
-      animation: float ease-in-out infinite;
-      animation-duration: calc(5s + (random() * 3s));
+      animation: float 6s ease-in-out infinite;
     }
 
     @keyframes float {
       0% {
-        transform: translateY(0) translateX(0);
+        transform: translate(0, 0);
         opacity: 0.7;
       }
       50% {
-        transform: translateY(-150px) translateX(30px);
+        transform: translate(50px, -150px);
         opacity: 1;
       }
       100% {
-        transform: translateY(0) translateX(60px);
+        transform: translate(0, 0);
         opacity: 0.7;
       }
     }
@@ -108,6 +107,16 @@
       font-weight: bold;
       color: #ffffff;
       text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .floating-element:nth-child(odd) {
+      animation-duration: 8s;
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    .floating-element:nth-child(even) {
+      animation-duration: 10s;
+      background: rgba(200, 200, 255, 0.8);
     }
   </style>
 </head>
@@ -124,8 +133,10 @@
     <div class="floating-element" style="top: 60%; left: 50%;"></div>
     <div class="floating-element" style="top: 80%; left: 70%;"></div>
     <div class="floating-element" style="top: 10%; left: 80%;"></div>
+    <div class="floating-element" style="top: 50%; left: 15%;"></div>
+    <div class="floating-element" style="top: 75%; left: 90%;"></div>
   </div>
 
-  <footer>The webpage is Made by Aditya Ray, Class 7A, St. Joseph's Academy and using html, js and css</footer>
+  <footer>The webpage is Made by Aditya Ray, Class 7A, St. Joseph's Academy and using HTML, JS, and CSS</footer>
 </body>
 </html>
