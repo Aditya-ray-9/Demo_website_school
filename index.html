@@ -36,6 +36,7 @@
       margin-top: 20px;
       font-weight: 300;
       letter-spacing: 2px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     @keyframes glow {
@@ -49,14 +50,16 @@
 
     .button {
       margin-top: 30px;
-      padding: 10px 20px;
-      font-size: 1rem;
+      padding: 12px 25px;
+      font-size: 1.2rem;
+      font-weight: bold;
       background: #ffffff;
       color: #4caf50;
       border: none;
-      border-radius: 20px;
+      border-radius: 30px;
       cursor: pointer;
-      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
     }
 
     .button:hover {
@@ -75,12 +78,12 @@
 
     .floating-element {
       position: absolute;
-      width: 15px;
-      height: 15px;
+      width: 20px;
+      height: 20px;
       background: rgba(255, 255, 255, 0.7);
       border-radius: 50%;
       animation: float ease-in-out infinite;
-      animation-duration: calc(6s + (random() * 5s));
+      animation-duration: calc(5s + (random() * 3s));
     }
 
     @keyframes float {
@@ -112,11 +115,10 @@
   <div class="container">
     <div class="title">St. Joseph Academy</div>
     <div class="subtitle">Excellence in Education And the page is made by Aditya Ray 7A</div>
-    <button class="button">Learn More</button>
+    <button class="button" onclick="window.location.href='https://stjosephsacademy.ac.in/'">Learn More</button>
   </div>
 
   <div class="floating-elements">
-    <!-- Randomly placed floating elements -->
     <div class="floating-element" style="top: 20%; left: 10%;"></div>
     <div class="floating-element" style="top: 40%; left: 30%;"></div>
     <div class="floating-element" style="top: 60%; left: 50%;"></div>
@@ -124,6 +126,6 @@
     <div class="floating-element" style="top: 10%; left: 80%;"></div>
   </div>
 
-  <footer>Made by Aditya Ray, Class 7A</footer>
+  <footer>The webpage is Made by Aditya Ray, Class 7A, St. Joseph's Academy and using html, js and css</footer>
 </body>
 </html>
